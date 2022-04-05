@@ -22,12 +22,10 @@ importers:
   play:
     specifiers:
       '@vitejs/plugin-vue': ^2.3.1
-      scss: ^0.2.4
       vite: ^2.9.1
     devDependencies:
       '@vitejs/plugin-vue': 2.3.1_vite@2.9.1+vue@3.2.31
-      scss: 0.2.4
-      vite: 2.9.1
+      vite: 2.9.1_sass@1.49.11
 
 packages:
 
@@ -44,7 +42,7 @@ packages:
       vite: ^2.5.10
       vue: ^3.2.25
     dependencies:
-      vite: 2.9.1
+      vite: 2.9.1_sass@1.49.11
       vue: 3.2.31
     dev: true
 
@@ -466,11 +464,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ometa/0.2.2:
-    resolution: {integrity: sha512-LZuoK/yjU3FvrxPjUXUlZ1bavCfBPqauA7fsNdwi+AVhRdyk2IzgP3JRnevvjzQ6fKHdUw8YISshf53FmpHrng==}
-    engines: {node: '>= 0.2.0'}
-    dev: true
-
   /path-parse/1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
     dev: true
@@ -527,13 +520,6 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /scss/0.2.4:
-    resolution: {integrity: sha512-4u8V87F+Q/upVhUmhPnB4C1R11xojkRkWjExL2v0CX2EXTg18VrKd+9JWoeyCp2VEMdSpJsyAvVU+rVjogh51A==}
-    engines: {node: '>= 0.2.0'}
-    dependencies:
-      ometa: 0.2.2
-    dev: true
-
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
@@ -566,7 +552,7 @@ packages:
     hasBin: true
     dev: true
 
-  /vite/2.9.1:
+  /vite/2.9.1_sass@1.49.11:
     resolution: {integrity: sha512-vSlsSdOYGcYEJfkQ/NeLXgnRv5zZfpAsdztkIrs7AZHV8RCMZQkwjo4DS5BnrYTqoWqLoUe1Cah4aVO4oNNqCQ==}
     engines: {node: '>=12.2.0'}
     hasBin: true
@@ -586,6 +572,7 @@ packages:
       postcss: 8.4.12
       resolve: 1.22.0
       rollup: 2.70.1
+      sass: 1.49.11
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
