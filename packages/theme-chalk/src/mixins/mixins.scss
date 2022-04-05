@@ -1,0 +1,3 @@
+// 声明公共的scss方法, use不会多次打包,@import多次引用会多次打包
+@use 'config' as *;
+@forward 'config';

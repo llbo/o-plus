@@ -1,3 +1,3 @@
 <template>
-<div>测试组件</div>
+<div><o-icon color="red" :size="32" class="o-icon-jiazai">hello</o-icon></div>
 </template>
