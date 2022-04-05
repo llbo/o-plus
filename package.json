@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "pnpm -C play start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.6.3",
+    "vue": "^3.2.31"
+  }
+}
