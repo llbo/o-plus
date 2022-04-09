@@ -12,7 +12,8 @@
     "sourceMap": true,
     "lib": [ // 编译时使用的库
       "ESNext",
-      "DOM"
+      "DOM",
+      "ES2015.Promise"
 
     ],
     "allowSyntheticDefaultImports": true, // 允许没有导入的模块中导入
