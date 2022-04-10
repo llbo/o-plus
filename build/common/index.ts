@@ -16,3 +16,6 @@ export const run = async (command: string):Promise<void> => {
     app.on("close", resolve);
   });
 };
+export const pathRewriter = (format) => {
+  return (id: string) => id.replaceAll('@o-plus', `o-plus/${format}`)
+}

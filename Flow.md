@@ -15,3 +15,7 @@
   - pnpm install gulp-sass @types/gulp-sass @types/sass @types/gulp-autoprefixer gulp-autoprefixer @types/gulp-clean-css gulp-clean-css sass -w -D
 ##### 合并打包,生成ts类型文件
   - pnpm install gulp-typescript -D -w  
+##### 打包组件库
+  - pnpm install rollup @rollup/plugin-node-resolve @rollup/plugin-commonjs rollup-plugin-typescript2 rollup-plugin-vue -D -w
+##### 匹配所有文件
+ - pnpm install fast-glob -w -D
