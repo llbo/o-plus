@@ -17,5 +17,11 @@
   - pnpm install gulp-typescript -D -w  
 ##### 打包组件库
   - pnpm install rollup @rollup/plugin-node-resolve @rollup/plugin-commonjs rollup-plugin-typescript2 rollup-plugin-vue -D -w
-##### 匹配所有文件
+##### 匹配所有文件,遍历文件夹
  - pnpm install fast-glob -w -D
+
+##### 生成.d.ts文件
+ - pnpm install ts-morph -w -D
+
+##### 编译vue单文件组件
+ - pnpm install @vue/compiler-sfc -w -D
