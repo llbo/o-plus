@@ -5,14 +5,14 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import vue from "rollup-plugin-vue";
 import typescript from "rollup-plugin-typescript2";
-import { series } from "gulp";
+import { series, parallel, TaskFunction } from "gulp";
 import { sync } from "fast-glob";
 import glob from "fast-glob";
 import { Project, SourceFile } from "ts-morph";
 import { compRoot, outDir, projectRoot } from "./common/paths";
 import { OutputOptions, rollup } from "rollup";
 import { buildConfig } from "./common/config";
-import { pathRewriter } from "./common";
+import { pathRewriter, run } from "./common";
 /**
  * 打包每个组件
  */
@@ -101,4 +101,31 @@ async function genTypes() {
   await Promise.all(tasks)
 }
 
-export const buildComponent = series(buildEachComponent, genTypes);
+// 拷贝到es, lib目录下
+const copyTypes =  () => {
+  const src = path.resolve(outDir, 'types/components/')
+  const copy = (module) => {
+    let output = path.resolve(outDir, module, 'components')
+    return () => run(`cp -r ${src}/* ${output}`)
+  }
+  return parallel(copy('es'), copy('lib'))
+}
+
+// 打包入口
+async function buildComponentEntry() {
+  const config = {
+    input: path.resolve(compRoot, 'index.ts'),
+    plugins: [typescript()],
+    external: () => true 
+  }
+  const bundle = await rollup(config)
+  return Promise.all(
+    Object.values(buildConfig).map((config)=>({
+      format: config.format,
+      file: path.resolve(config.output.path, 'components/index.js')
+
+    })).map(config => bundle.write(config as OutputOptions))
+  )
+  
+}
+export const buildComponent = series(buildEachComponent, genTypes, copyTypes(), buildComponentEntry);
