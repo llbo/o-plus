@@ -6,7 +6,7 @@
 ##### npx tsc --init
 #####  在根目录下安装当前项目组件
  - pnpm install @o-plus/components -w
- - pnpm install @o-plus/theme-chalk -w
+ - pnpm install @o-plus/themeChalk -w
  - pnpm install @o-plus/utils -w
 
 ##### gulp打包流程

@@ -12,13 +12,12 @@ function compile() {
     .pipe(sass.sync())
     .pipe(autoPrefixer())
     .pipe(cleanCss())
-    .pipe(dest(path.resolve(outDir, "theme-chalk/css")));
+    .pipe(dest(path.resolve(outDir, "themeChalk")));
 }
 
 function copyfont() {
   return src(path.resolve(__dirname, "./src/fonts/**"))
-    .pipe(cleanCss())
-    .pipe(dest(path.resolve(outDir, "theme-chalk/fonts")));
+    .pipe(dest(path.resolve(outDir, "themeChalk/fonts")));
 }
 
 // 输出到根目录dist下

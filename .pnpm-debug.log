@@ -1,0 +1,291 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 6,
+    "total": 6,
+    "workspacePrefix": "D:\\code\\web\\li-ui\\o-plus"
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@o-plus/components",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.ts",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "D:\\code\\web\\li-ui\\o-plus\\packages\\components"
+  },
+  "2 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "o-plus",
+      "version": "1.0.0",
+      "description": "",
+      "main": "lib/index.js",
+      "module": "es/index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "D:\\code\\web\\li-ui\\o-plus\\packages\\o-plus"
+  },
+  "3 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@o-plus/theme-chalk",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "build": "gulp"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "D:\\code\\web\\li-ui\\o-plus\\packages\\themeChalk"
+  },
+  "4 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@o-plus/utils",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "build": "gulp"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "D:\\code\\web\\li-ui\\o-plus\\packages\\utils"
+  },
+  "5 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@o-plus/play",
+      "private": true,
+      "description": "",
+      "scripts": {
+        "start": "vite"
+      },
+      "author": "",
+      "license": "ISC",
+      "devDependencies": {
+        "@vitejs/plugin-vue": "^2.3.1",
+        "vite": "^2.9.1"
+      }
+    },
+    "prefix": "D:\\code\\web\\li-ui\\o-plus\\play"
+  },
+  "6 debug pnpm:package-manifest": {
+    "initial": {
+      "private": true,
+      "scripts": {
+        "start": "pnpm -C play start",
+        "build": "gulp -f build/gulpfile.ts"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "MIT",
+      "devDependencies": {
+        "@rollup/plugin-commonjs": "^21.0.3",
+        "@rollup/plugin-node-resolve": "^13.1.3",
+        "@types/gulp": "^4.0.9",
+        "@types/gulp-autoprefixer": "^0.0.33",
+        "@types/gulp-clean-css": "^4.3.0",
+        "@types/gulp-sass": "^5.0.0",
+        "@types/sass": "^1.43.1",
+        "@vue/compiler-sfc": "^3.2.32",
+        "fast-glob": "^3.2.11",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-sass": "^5.1.0",
+        "gulp-typescript": "^6.0.0-alpha.1",
+        "rollup": "^2.70.1",
+        "rollup-plugin-typescript2": "^0.31.2",
+        "rollup-plugin-vue": "^6.0.0",
+        "sass": "^1.49.11",
+        "sucrase": "^3.21.0",
+        "ts-morph": "^14.0.0",
+        "typescript": "^4.6.3",
+        "vue": "^3.2.31"
+      },
+      "dependencies": {
+        "@o-plus/components": "workspace:^1.0.0",
+        "@o-plus/themeChalk": "workspace:^1.0.0",
+        "@o-plus/utils": "workspace:^1.0.0"
+      }
+    },
+    "prefix": "D:\\code\\web\\li-ui\\o-plus"
+  },
+  "7 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "D:\\.pnpm-store\\v3",
+    "virtualStoreDir": "D:\\code\\web\\li-ui\\o-plus\\node_modules\\.pnpm"
+  },
+  "8 debug pnpm:stage": {
+    "prefix": "D:\\code\\web\\li-ui\\o-plus",
+    "stage": "resolution_started"
+  },
+  "9 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/gulp-typescript/6.0.0-alpha.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "gulp-typescript",
+      "rawSpec": "^6.0.0-alpha.1"
+    }
+  },
+  "10 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/gulp-typescript/6.0.0-alpha.1",
+    "requester": "D:\\code\\web\\li-ui\\o-plus",
+    "status": "resolved"
+  },
+  "11 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/gulp/4.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "gulp",
+      "rawSpec": "^4.0.2"
+    }
+  },
+  "12 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/gulp/4.0.2",
+    "requester": "D:\\code\\web\\li-ui\\o-plus",
+    "status": "resolved"
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@types/gulp-autoprefixer/0.0.33",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/gulp-autoprefixer",
+      "rawSpec": "^0.0.33"
+    }
+  },
+  "14 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@types/gulp-autoprefixer/0.0.33",
+    "requester": "D:\\code\\web\\li-ui\\o-plus",
+    "status": "resolved"
+  },
+  "15 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@types/gulp/4.0.9",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/gulp",
+      "rawSpec": "^4.0.9"
+    }
+  },
+  "16 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@types/gulp/4.0.9",
+    "requester": "D:\\code\\web\\li-ui\\o-plus",
+    "status": "resolved"
+  },
+  "17 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/gulp-sass/5.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "gulp-sass",
+      "rawSpec": "^5.1.0"
+    }
+  },
+  "18 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/gulp-sass/5.1.0",
+    "requester": "D:\\code\\web\\li-ui\\o-plus",
+    "status": "resolved"
+  },
+  "19 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/gulp-autoprefixer/8.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "gulp-autoprefixer",
+      "rawSpec": "^8.0.0"
+    }
+  },
+  "20 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/gulp-autoprefixer/8.0.0",
+    "requester": "D:\\code\\web\\li-ui\\o-plus",
+    "status": "resolved"
+  },
+  "21 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@types/gulp-sass/5.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/gulp-sass",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "22 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@types/gulp-sass/5.0.0",
+    "requester": "D:\\code\\web\\li-ui\\o-plus",
+    "status": "resolved"
+  },
+  "23 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@types/gulp-clean-css/4.3.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/gulp-clean-css",
+      "rawSpec": "^4.3.0"
+    }
+  },
+  "24 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@types/gulp-clean-css/4.3.0",
+    "requester": "D:\\code\\web\\li-ui\\o-plus",
+    "status": "resolved"
+  },
+  "25 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/fast-glob/3.2.11",
+    "wanted": {
+      "dependentId": ".",
+      "name": "fast-glob",
+      "rawSpec": "^3.2.11"
+    }
+  },
+  "26 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/fast-glob/3.2.11",
+    "requester": "D:\\code\\web\\li-ui\\o-plus",
+    "status": "resolved"
+  },
+  "27 debug pnpm:_dependency_resolved": {
+    "resolution": "link:packages/components",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@o-plus/components",
+      "rawSpec": "workspace:^1.0.0"
+    }
+  },
+  "28 debug pnpm:_dependency_resolved": {
+    "resolution": "link:packages/utils",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@o-plus/utils",
+      "rawSpec": "workspace:^1.0.0"
+    }
+  },
+  "29 error pnpm": {
+    "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "In : No matching version found for @o-plus/themeChalk@^1.0.0 inside the workspace",
+      "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+      "stack": "pnpm: In : No matching version found for @o-plus/themeChalk@^1.0.0 inside the workspace\n    at tryResolveFromWorkspace (C:\\Users\\50735\\AppData\\Roaming\\nvm\\v15.3.0\\node_modules\\pnpm\\dist\\pnpm.cjs:85994:15)\n    at resolveNpm (C:\\Users\\50735\\AppData\\Roaming\\nvm\\v15.3.0\\node_modules\\pnpm\\dist\\pnpm.cjs:85885:39)\n    at Object.resolve (C:\\Users\\50735\\AppData\\Roaming\\nvm\\v15.3.0\\node_modules\\pnpm\\dist\\pnpm.cjs:86117:40)\n    at ctx.requestsQueue.add.priority (C:\\Users\\50735\\AppData\\Roaming\\nvm\\v15.3.0\\node_modules\\pnpm\\dist\\pnpm.cjs:74471:75)\n    at run (C:\\Users\\50735\\AppData\\Roaming\\nvm\\v15.3.0\\node_modules\\pnpm\\dist\\pnpm.cjs:74187:90)\n    at PQueue._tryToStartAnother (C:\\Users\\50735\\AppData\\Roaming\\nvm\\v15.3.0\\node_modules\\pnpm\\dist\\pnpm.cjs:74141:13)\n    at PQueue._next (C:\\Users\\50735\\AppData\\Roaming\\nvm\\v15.3.0\\node_modules\\pnpm\\dist\\pnpm.cjs:74090:14)\n    at run (C:\\Users\\50735\\AppData\\Roaming\\nvm\\v15.3.0\\node_modules\\pnpm\\dist\\pnpm.cjs:74197:18)\n    at processTicksAndRejections (node:internal/process/task_queues:93:5)"
+    }
+  },
+  "30 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@vitejs/plugin-vue/2.3.1",
+    "wanted": {
+      "dependentId": "play",
+      "name": "@vitejs/plugin-vue",
+      "rawSpec": "^2.3.1"
+    }
+  },
+  "31 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@vitejs/plugin-vue/2.3.1",
+    "requester": "D:\\code\\web\\li-ui\\o-plus",
+    "status": "resolved"
+  }
+}

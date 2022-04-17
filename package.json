@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@o-plus/components": "workspace:^1.0.0",
-    "@o-plus/theme-chalk": "workspace:^1.0.0",
+    "@o-plus/themeChalk": "workspace:^1.0.0",
     "@o-plus/utils": "workspace:^1.0.0"
   }
 }
