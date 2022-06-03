@@ -77,7 +77,7 @@ async function genTypes() {
         const sfc = VueCompiler.parse(content)
         const { script } = sfc.descriptor
         if (script) {
-          let contents = script.content
+          const contents = script.content
           const sourceFile = project.createSourceFile(file + ".ts", contents)
           sourceFiles.push(sourceFile)
         }
@@ -109,7 +109,7 @@ async function genTypes() {
 const copyTypes = () => {
   const src = path.resolve(outDir, "types/components/")
   const copy = (module) => {
-    let output = path.resolve(outDir, module, "components")
+    const output = path.resolve(outDir, module, "components")
     return () => run(`cp -r ${src}/* ${output}`)
   }
   return parallel(copy("es"), copy("lib"))
